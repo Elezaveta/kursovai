@@ -1,0 +1,194 @@
+*{
+   box-sizing: border-box; 
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+}
+header{
+    margin-bottom: 5px;
+    padding: 10;/* Отступ текста от краёв блока */
+    border-radius: 5px; /* Закругляются углы блока */
+        box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень*/
+        margin-bottom: 5px;
+}
+.header_content{
+    font-size: 25px; /* Размер букв подзаголовка */
+    font-style:italic; /* Курсив */
+    font-weight:bold;
+    background-color: #1b1b1b;/**/
+    border-radius: 5px; /* Закругляются углы блока */
+    height: 65px;
+    margin-bottom: 5px;
+  
+}
+.inf{
+    position:absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
+    top:-15px; /* Двигается вверх-вниз */
+    left:450px; /* Двигается вправо-влево */
+    font-size: 25px; /* Размер букв подзаголовка */
+    font-style:italic; /* Курсив */
+    font-weight:bold; /* Жирный */
+    color:#ffffff; /* Цвет букв подзаголовка */ 
+}
+
+.header_logo{
+    text-align: left;
+    padding-left: 50px;
+   
+}
+
+.menu{
+    background-color: #FE9798;
+    padding: 10;/* Отступ текста от краёв блока */
+    list-style-type: none;
+    margin-bottom: 5px; /* Нижний отступ шапки от остального контента */
+    border-radius: 5px; /* Закругляются углы блока */
+    box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень*/
+}
+nav{
+    width: 100%;
+}
+nav,li{display: inline-block;}
+nav,a{
+    color: #000000;/*меняем цвет ссылок*/
+    padding: 5px 10px;
+    font-weight: bold;
+    display: inline-block;
+      
+}
+nav,a:hover{
+        border-radius: 20px 5px;
+        background-color: #fff; 
+}
+.aside{
+    
+    opacity: .85;
+    width: 150px; /* Ширина статьи */
+    padding: 10px; /* Отступ текста от краёв блока */
+    background: linear-gradient(#ffffff, #FE9798);
+        border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+    margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+    display: inline-block;   
+
+}
+content{
+    height:850px;
+      background: #ffffff;
+      width: 870px; /* Ширина блока */
+      padding: 10px; /* Отступ текста от краёв */
+      float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
+      border-radius: 5px; /* Закругляем углы блока */
+      box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+     overflow-y: auto;
+     margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+}
+footer{
+    background: #181717;/* Фон шапки */
+    
+    color:rgb(238, 232, 232);
+         height:80px; /* Высота блока подвала */
+       /* Фон блока подвала */
+      margin-bottom: 10px; /* Отступ снизу */
+      border-radius: 5px; /* Закруглённые углы */
+      box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+      position: relative;
+      min-height: 100%;
+    }
+    .clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+      clear: both;
+    }
+      .fon{ /* Номер телефона */
+      float:left; /* Разрешаем другим элементам обтекать абзац справа */
+      margin:20px 0 0 20px;
+      color: lavender;
+    }
+    .mail{ /* почта */
+      float:left;
+      margin:20px 0 0 20px;
+      color: lavender;
+    }
+    .inst{ /* instagram */
+      float:left;
+     margin:20px 0 0 20px;
+     color: lavender;
+}
+
+.str{
+    height:100%;
+    background: #9793946b;
+    font-size: large;
+    width: 65%; /* Ширина блока */
+    padding: 10px; /* Отступ текста от краёв */
+    float:right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
+    border-radius: 5px; /* Закругляем углы блока */
+    box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+   overflow-y: auto;
+   margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+}
+.yslugi{
+    height:850px;
+    font-size: x-large;
+      background: #fafafac5;
+      width: 1125px; /* Ширина блока */
+      padding: 10px; /* Отступ текста от краёв */
+      text-align: center;
+      float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
+      border-radius: 5px; /* Закругляем углы блока */
+      box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+     overflow-y: auto;
+     margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+}
+
+#gall {
+    position: relative;
+    padding-top: 50%;
+    -moz-user-select: none; user-select: none;
+  }
+  #gall img {
+    position: absolute;
+    top: 25%;
+    left: 12.5%;
+    max-width: 24.5%;
+    max-height: 49.5%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: zoom-in;
+    transition: .2s;
+  }
+  #gall img:nth-child(4n-2) {left: 37.5%;}
+  #gall img:nth-child(4n-1) {left: 62.5%;}
+  #gall img:nth-child(4n) {left: 87.5%;}
+  #gall img:nth-child(n+5) {top: 75%;}
+  #gall img:nth-child(n+9) {top: 125%;}
+  
+  #gall img:focus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    max-width: 100%;
+    max-height: 100%;
+    outline: none;
+    pointer-events: none;
+  }
+  #gall img:focus ~ div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(248, 223, 223, 0.342);
+    cursor: zoom-out;
+  }
